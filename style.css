@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav_container {
+    height: 4rem;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+}
+.toolbox-priority-cont {
+    height: 3rem;
+    width: 15rem;
+    background-color: orange;
+    /* border: 2px solid red; */
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px black;
+    border-radius: 5px;
+}
+.action-btn-cont {
+    height: 3rem;
+    width: 10rem;
+    background-color: orangered;
+    /* border: 2px solid black; */
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 2px black;
+    border-radius: 5px;
+}
+.color {
+    height: 2rem;
+    width: 3.2rem;
+    margin-left: 5px;
+    background-color: orangered;
+    box-shadow: 0 0 2px black;
+    border-radius: 5px;
+}
+.btn {
+    height: 2rem;
+    width: 4rem;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    box-shadow: 0 0 2px black;
+    border-radius: 5px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid blue; */
+}
+.pink {
+    background-color: pink;
+}
+.grey {
+    background-color: grey;
+}
+.blue {
+    background-color: blue;
+}
+.black {
+    background-color: black;
+}
+.toolbox-priority-cont > *:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+.add-btn:hover {
+    background-color: orchid;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    background-color: orchid;
+    cursor: pointer;
+}
+
+.modal-cont {
+    height: 45vh;
+    width: 35vw;
+    /* background: red; */
+    position: absolute;
+    top: calc((100vh - 50vh) / 2);
+    left: calc((100vw - 45vw) / 2);
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 1px grey;
+}
+.textarea-cont {
+    height: 100%;
+    width: 75%;
+    border: none;
+    resize: none;
+    border-radius: 5px;
+    outline: none;
+    /* line-height: 2rem;  */
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.priority-colors-cont {
+    height: 100%;
+    width: 25%;
+    border-radius: 5px;
+    background-color: rgb(192, 161, 161);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.priority-colors {
+    height: 3rem;
+    width: 4rem;
+    /* margin: 15px 0; */
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+.priority-colors:hover {
+    background-color: lightgreen;
+}
+
+.active {
+    border: 2px solid white;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ticket-cont {
+    height: 12rem;
+    width: 15rem;
+    margin: 8px;
+    box-shadow: 0 1px 3px 1px grey;
+    /* border-radius: 5px; */
+    /* background-color: aqua; */
+}
+
+.ticket-color{
+    height: 1.5rem;
+    /* background-color: olive; */
+}
+
+.ticket-id{
+    height: 1.4rem;
+    padding: .2rem;
+    background-color: rgb(195, 222, 43);
+}
+
+.ticket-data{
+    height: calc( 12rem - 1.5rem - 1.4rem - 1.3rem);
+    padding: .5rem;
+    /* background-color: teal; */
+}
+
+.ticket-lock{
+    height: 1.3rem;
+    color: red;
+    display: flex;
+    justify-content: end;
+    /* border: 1px solid black; */
+    padding: 6px;
+    align-items: center;
+}
